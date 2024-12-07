@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="https://kit.fontawesome.com/168971a581.js" crossorigin="anonymous"></script>
+
+    
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="images/logo.jpg" alt="" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#project">Projects</a></li>
+                    <li><a href="#achievement">Achievement</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-regular fa-circle-xmark" onclick="closemenu()"></i> 
+                </ul>
+                    <i class="fa-regular fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+            <p>React.JS & Node.JS Developer</p>
+             <h1>Hello, I'm <br><span>Anjali</span> Nimavat</h1>
+        </div>
+        </div>
+    </div>
+   <!-- -----------------About Me ------------------------ -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/me.jpeg" alt="">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Welcome to my portfolio! As a passionate and dedicated aspiring React.JS Developer from India,
+                I specialize in the REACT.JS & NODE.JS. 
+                I hold a Bachelor of Computer Application degree and am currently pursuing a Master of Computer Application, 
+                fine-tuning my expertise to become a frontrunner in the tech industry.</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>  
+                </div>
+
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Forntend</span><br>HTML<br>CSS<br>JS<br>React.JS</li>
+                        <li><span>Backend</span><br>Node.JS<br>Rest API </li>
+                        <li><span>DataBase</span><br>SQL<br>MySQl</li>
+                        <li><span>Other</span><br>Android<br>IOS(UI)<br>React Native</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Masters of computer Application</span><br>S.K.Patel institute of Management & Computer Studies, Gandhinagar<br>Aug 2023 - April 2025 <br>CGPA: 7.68</li>
+                        <li><span>Bachelor of computer Application</span><br>Dr.Subhash Technical Campus,Junagadh<br>Aug 2020 - March 2023 <br>CGPA:7.89</li>
+                        <li><span>HSC</span><br>SMT.J.V.Goghaniya Girls High School<br>March-2020 <br>88.78 %</li>
+                    </ul>
+                </div>
+
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        Fresher
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!------------------------Project--------------------->
+
+<div id="project">
+    <div class="container">
+    <h1 class="sub-title">Projects</h1>
+        <div class="project-list">
+            <div>
+                <h2>Simon-Game</h2>
+                    <p>
+                        It is a game in which a pattern is form in each round and it gets more complex as it goes further,
+                        user have to follow the same pattern as generated along side the previous one.
+                    </p>
+                <h2>Technologies</h2>
+                    <p>HTML, CSS, JS</p>
+                    
+                <a href="https://github.com/Animavat24/Simon-Game">Github Link</a>
+            </div>
+
+            <div>
+                <h2>Tip-Calculator</h2>
+                
+                    <p>
+                        A tip calculator programs in which we can specify total amount of bill, people in which to share and percent of tip.
+                    </p>
+                
+                <h2>Technologies</h2>
+                    <p>HTML, CSS, JS</p>
+                <a href="https://github.com/Animavat24/Tip-calculator">Github Link</a>
+            </div>
+
+            <div>
+                <h2>Word-Srambling</h2>
+                    <p>
+                        It is a simple game in which user have to guess the world with the scrumbled words and hint provided in specified time.
+                    </p>
+                <h2>Technologies</h2>
+                    <p>HTML, CSS, JS</p>
+                <a href="https://github.com/Animavat24/word-scrambling">Github Link</a>
+            </div>
+
+           <div>
+                <h2>Crime reporting System</h2>
+                    <p>
+                        Its a website where User can fill their complaint and get solutions
+                    </p>
+                <h2>Technologies</h2>
+                    <p>HTML, CSS, JS , PHP, SQL</p>
+            </div>
+
+            <div>
+                <h2>Online Shopping </h2>
+                    <p>
+                        Its only Documentation part which are submitted as a 1st semester project
+                    </p>
+                
+            </div> 
+        </div>
+    </div>
+</div>
+
+<!----------------------Achievement------------------>
+
+<div id="achievement">
+    <div class="container">
+        <h1 class="sub-title">Achievements</h1>
+        <div class="achievement-list">
+            <div>
+                <h2>Winner at Cyber-Shadez Event 2021</h2>
+                    <h5>Organized By GLS UNIVERSITY </h5>
+                    <p>
+                        As a team leader, proposed a solution for Online Crime Reporting Portal
+                    </p>  
+
+                    <a href="images/Anjali_Certificate.jpg">Certificate Link</a>
+            </div>
+    </div>
+</div>
+
+<!-------------------------------Contact----------------------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i> anjalinimavat24@gmail.com</p>
+                <p><i class="fa-solid fa-phone"></i> +91 6354080380</p>
+
+                <div class="social-icon">
+                    <a href="https://www.linkedin.com/in/anjali-nimavat-13b69424b"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Animavat24"><i class="fa-brands fa-github"></i></a>
+                </div>
+            </div>
+             
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="name" placeholder=" Your name" required>
+                    <input type="email" name="email" placeholder=" Your Email" required>
+                    <textarea name="Message" rows="6" placeholder=" Your Message"></textarea>
+                    <button type="submit" class="btn btn2">submit</button>
+                </form>
+                <span id="msg"></span>
+
+            </div>
+        </div>
+    </div>
+    <div class="copy-right">
+        <p>
+            <i class="fa-solid fa-heart"></i> copyright @ Anjali Nimavat.
+        </p>
+    </div>
+</div>
+
+
+
+<script>
+     var tablinks = document.getElementsByClassName("tab-links");
+     var tabcontents = document.getElementsByClassName("tab-contents");
+
+     function opentab(tabname){
+        for(tablink of  tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of  tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+
+    }   
+</script>
+<script>
+    var sidemenu = document.getElementById("sidemenu");
+    
+    function openmenu(){
+        sidemenu.style.right = "0";
+
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+
+    }
+</script>  
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz_fVjWQDMZCRV9ITDdYY3S_kwvoBPbbYJyLuxwByP9cFuT39ZOIJYYfDnF2F_-WxEJZw/exec';
+    const form = document.forms['submit-to-google-sheet'];
+    const msg = document.getElementById("msg");
+
+    form.addEventListener('submit', (e) => {
+        e.preventDefault();
+
+        fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+            .then((response) => {
+                msg.innerHTML = "Message sent successfully";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 3000);
+                form.reset();
+            })
+            .catch((error) => {
+                console.error('Error!', error.message);
+                msg.innerHTML = "Error sending message. Please try again.";
+                setTimeout(() => {
+                    msg.innerHTML = "";
+                }, 5000);
+            });
+    });
+</script>
+</script>
+</body>
+</html>
